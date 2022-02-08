@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indice</title>
+</head>
+<body>
+    <h2>Indice de ejemplos</h2>
+    <ol>
+        <li>Encabezados</li> 
+        <p>
+            <a href="https://github.com/PatriciaPOchayta/2020-2021-CSAAI-/blob/main/P1/S2/Encabezados_html">Página principal</a>
+            : en Github
+        </p>
+        <li>Parrafos</li>
+        <p>
+            <a href="https://github.com/PatriciaPOchayta/2020-2021-CSAAI-/blob/main/P1/S2/Parrafos_html">Página principal</a>
+            : en Github
+        </p>
+        <li>Listas</li>
+        <p>
+            <a href="https://github.com/PatriciaPOchayta/2020-2021-CSAAI-/blob/main/P1/S2/Lista_html">Página principal</a>
+            : en Github
+        </p>
+        <li>Botones</li>
+        <p>
+            <a href="https://github.com/PatriciaPOchayta/2020-2021-CSAAI-/blob/main/P1/S2/Botones_html">Página principal</a>
+            : en Github
+        </p>
+        <li>Enlaces</li>
+        <p>
+            <a href="https://github.com/PatriciaPOchayta/2020-2021-CSAAI-/blob/main/P1/S2/Enlaces_html">Página principal</a>
+            : en Github
+        </p>
+        <li>Imagen</li>
+        <p>
+            <a href="https://github.com/PatriciaPOchayta/2020-2021-CSAAI-/blob/main/P1/S2/Imagen_html">Página principal</a>
+            : en Github
+        </p>
+        <li>Tablas</li>
+        <p>
+            <a href="https://github.com/PatriciaPOchayta/2020-2021-CSAAI-/blob/main/P1/S2/Tabla_html">Página principal</a>
+            : en Github
+        </p>
+        <li>Botones</li>
+        <p>
+            <a href="https://github.com/PatriciaPOchayta/2020-2021-CSAAI-/blob/main/P1/S2/Botones_html">Página principal</a>
+            : en Github
+        </p>
+    </ol>
+    
+</body>
+</html>
+
