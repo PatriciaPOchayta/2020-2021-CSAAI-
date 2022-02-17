@@ -1,5 +1,10 @@
 body {
     background-image: <bg-image>;
+    #columnas{
+      column: count 2px;;
+      column-gap:20px;
+      column-rule:4px dotted gray;
+   }
   }
   
   /* Estilo para las etiquetas de tipo h1 */
@@ -9,15 +14,17 @@ body {
     font-size:  xxx-large;
   
 
-    h3 {
+ h3 {
       color:rgb(165, 128, 7);
       font-family:'Times New Roman', Times, serif;
-      font-size:  xx-large;
+      font-size:  xx-large; 
   
       
   /* Estilo para los párrafos */
   p {
     color: blue;
   }
+
+  
 
 
