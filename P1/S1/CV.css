@@ -15,8 +15,8 @@ body{
   }
 
   h3{
+    font-size: 50px
     color:rgb(201, 162, 37);
-    font-size: 80px
     font-family:'Times New Roman', Times, serif;
   }
 
@@ -43,7 +43,7 @@ body{
   }
   .perfilCaronte{
     background-color: rgb(255,255,255,0.85);
-    padding: 80px;
+    padding: 100px;
     margin: 50px;
     line-height:20px;
     text-align: center;
