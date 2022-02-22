@@ -1,4 +1,4 @@
-(otra notación más compacta para definir los manejadores, que nos ahorra escribir la palabra clave function.)
+(NO hace falta definir una nueva función externa, sino que se puede crear en la propia asignación del manejador.)
 
 console.log("Ejecutando js...")
 
@@ -7,6 +7,6 @@ const test = document.getElementById('test')
 
 //-- Configurar el manejador para el evento de
 //-- pulsación de botón
-test.onclick = () => {
+test.onclick = function () {
   console.log("Click sobre el párrafo...")
 }
