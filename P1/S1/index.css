@@ -1,30 +1,67 @@
-body {
-    background-image: <bg-image>;
-    #columnas{
-      column: count 2px;;
-      column-gap:20px;
-      column-rule:4px dotted gray;
-   }
+body{
+    background-image: url("im1.jpeg");
+    background-position: top;
+    background-size: 600px;
+    font-family: 'Times New Roman', Times, serif;
+    padding:10px;
+    margin: 100px;
+  
   }
   
-  /* Estilo para las etiquetas de tipo h1 */
-  h1 {
-    color:rgb(165, 128, 7);
+  h1{
+    font-size: 75px;
+    color:rgb(201, 162, 37);
     font-family:'Times New Roman', Times, serif;
-    font-size:  xxx-large;
-  
-
- h3 {
-      color:rgb(165, 128, 7);
-      font-family:'Times New Roman', Times, serif;
-      font-size:  xx-large; 
-  
-      
-  /* Estilo para los párrafos */
-  p {
-    color: blue;
   }
 
-  
+  h3{
+    font-size: 50px
+    color:rgb(201, 162, 37);
+    font-family:'Times New Roman', Times, serif;
+  }
 
-
+  h4 {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(201, 162, 37);
+    border: 5px solid rgb(201, 162, 37);
+    padding: 10px;
+  }
+  .perfil{
+    background-color: rgb(255,255,255,0.85);
+    padding: 80px;
+    margin: 50px;
+    line-height:20px;
+    text-align: center;
+  }
+  .datos{
+    background-color: rgb(255,255,255,0.85);
+    padding: 80px;
+    margin: 50px;
+    line-height:20px;
+  }
+  .perfilCaronte{
+    background-color: rgb(255,255,255,0.85);
+    padding: 100px;
+    margin: 50px;
+    line-height:20px;
+    text-align: center;
+  }
+  #f_perfil{
+    width: 25%;
+    float: left;
+    padding: 0px;
+  }
+  .f_datos{
+    width:26px;
+    height:22px;
+    float: left;
+    padding-left:20px;
+  }
+  .f_boton{
+    width:40px;
+    height:40px;
+    align-items: center;
+    padding: 10px;
+  }
