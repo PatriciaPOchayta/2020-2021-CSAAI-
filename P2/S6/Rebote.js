@@ -9,17 +9,30 @@ canvas.height = 100;
 //-- Obtener el contexto del canvas
 const ctx = canvas.getContext("2d");
 
-//-- Posición del elemento a animar
+//-- Coordenadas del objeto
 let x = 0;
-let y = 0;
+let y = 10;
 
-//-- Función principal de animación
+//-- Velocidad horizontal del objeto
+let velx = 2;
+
+//-- Funcion principal de animacion
 function update() 
 {
   console.log("test");
-  //-- Algoritmo de animación:
-  //-- 1) Actualizar posiciones de los elementos
-  //-- Por hacer
+  //-- Algoritmo de animacion:
+  //-- 1) Actualizar posicion del  elemento
+  //-- (física del movimiento rectilineo uniforme)
+
+  //-- Comprobar colisión con borde derecho
+  //-- Si se alcanza la anchura del canvas, se cambia la velocidad
+  //-- de signo (rebote)
+  if (x >= canvas.width) {
+    velx = -velx;
+  }
+
+  //-- Actualizar la posición
+  x = x + velx;
 
   //-- 2) Borrar el canvas
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -44,7 +57,3 @@ function update()
 
 //-- ¡Que empiece la función!
 update();
-
-//-- El objeto está en reposo (velocidad = 0)
-x = x + 0;
-y = y + 0;
