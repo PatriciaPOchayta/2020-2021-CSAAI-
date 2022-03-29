@@ -1,12 +1,11 @@
 
 body{
-  background-image: ("fondo.jpg");
+  background-image: url("fondo.jpg");
   background-position: center;
   background-size: 1200px;
   padding:10px;
   margin: 100px;
 }
-
 
   #calculator{
     width: 600px;
