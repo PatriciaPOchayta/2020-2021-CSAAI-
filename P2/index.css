@@ -1,6 +1,6 @@
 
 body{
-  background-image: url("/home/alumnos/ochayta/PrácticasConstrucción/2020-2021-CSAAI-/P2/IMG_9131.JPG");
+  background-image: ("fondo.jpg");
   background-position: center;
   background-size: 1200px;
   padding:10px;
