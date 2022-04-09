@@ -18,7 +18,7 @@ const ESTADO = {
 let estado = ESTADO.INICIO;
 
 //-- Vidas Inicio
-let Vidas = 3;
+let Vidas = 5;
 
 
 //-- Puntos Inicio
@@ -162,11 +162,11 @@ function update(){
   //-- DIBUJAR
   if ( estado == ESTADO.INICIO){
     ctx.beginPath();
-    ctx.font = "30px Arial";
+    ctx.font = "35px Helvetica";
     ctx.strokeStyle = 'black';
-    ctx.lineWidth = 1.5;
+    ctx.lineWidth = 2.0;
     ctx.textAlign = "center";
-    ctx.strokeText("PULSA ESPACIO PARA SACAR ", canvas.width/2, canvas.height/2);
+    ctx.strokeText("PULSA 'ESPACIO' PARA SACAR ", canvas.width/2, canvas.height/3);
     ctx.closePath();
   }
   //-- Dibujar: Pelota
@@ -174,9 +174,9 @@ function update(){
   if (estado == ESTADO.JUGANDO){
     ctx.arc(x, y, 5, 0, 2 * Math.PI);
   }
-  ctx.strokeStyle = 'black';
+  ctx.strokeStyle = 'yellow';
   ctx.lineWidth = 2;
-  ctx.fillStyle = 'Orange';
+  ctx.fillStyle = 'black';
   ctx.fill()
   ctx.stroke()
   ctx.closePath();
@@ -191,7 +191,7 @@ function update(){
   
   //-- Dibujar: Marcadores 
   ctx.beginPath();
-  ctx.font = "25px Arial";
+  ctx.font = "25px Times New Roman";
   ctx.strokeStyle = 'black';
   ctx.lineWidth = 1.5;
   ctx.textAlign = "center";
@@ -208,7 +208,7 @@ function update(){
         ctx.rect(ladrillos[i][j].x, ladrillos[i][j].y, LADRILLO.Ancho, LADRILLO.Alto);
         ctx.lineWidth = 2;
         ctx.strokeStyle = 'black';
-        ctx.fillStyle = 'hsl('+ 100 * Math.random() + ' ,70% ,70%)';
+        ctx.fillStyle = "RGB(128,0,0)"
         ctx.fill();
         ctx.stroke();
         ctx.closePath();
@@ -222,8 +222,8 @@ function update(){
   //-- Mensaje: Victoria 
   if (Puntuación == 50){
     ctx.beginPath();
-    ctx.font = "50px Arial Black";
-    ctx.fillStyle ='hsl('+ (Math.random()*100 + 90) + ' ,70% ,50%)'
+    ctx.font = "60px Arial Black";
+    ctx.fillStyle = "RGB(128,0,0)"
     ctx.textAlign = "center";
     ctx.fillText("HAS SOBREVIVIDO", canvas.width/2, canvas.height/2);
     ctx.closePath();
@@ -233,8 +233,8 @@ function update(){
   //-- Mensaje: Derrota
   if (Vidas == 0){
     ctx.beginPath();
-    ctx.font = "50px Arial ";
-    ctx.strokeStyle = 'hsl(0 ,100% ,50%)'
+    ctx.font = "60px Arial Black";
+    ctx.strokeStyle = "RGB(128,0,0)"
     ctx.textAlign = "center";
     ctx.strokeText("HAS MUERTO", canvas.width/2, canvas.height/2);
     ctx.closePath();
