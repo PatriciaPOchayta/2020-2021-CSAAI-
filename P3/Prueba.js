@@ -46,10 +46,10 @@ let leftPressed = false;
 //-- Ladrillos: Numero y Tamaño 
 const LADRILLO = {
   Filas: 5,  
-  Columnas: 10,  
+  Columnas: 9,  
   Ancho: 60, 
   Alto: 10, 
-  origen_x: 10,
+  origen_x: 45,
   origen_y: 85,
   padding: 9,
   visible: true
@@ -164,9 +164,9 @@ function update(){
     ctx.beginPath();
     ctx.font = "35px Helvetica";
     ctx.strokeStyle = 'black';
-    ctx.lineWidth = 2.0;
+    ctx.lineWidth = 2.5;
     ctx.textAlign = "center";
-    ctx.strokeText("PULSA 'ESPACIO' PARA SACAR ", canvas.width/2, canvas.height/3);
+    ctx.strokeText("PULSA 'ESPACIO' PARA DISPARAR", canvas.width/2, canvas.height/3);
     ctx.closePath();
   }
   //-- Dibujar: Pelota
@@ -191,9 +191,9 @@ function update(){
   
   //-- Dibujar: Marcadores 
   ctx.beginPath();
-  ctx.font = "25px Times New Roman";
+  ctx.font = "25px Helvetica";
   ctx.strokeStyle = 'black';
-  ctx.lineWidth = 1.5;
+  ctx.lineWidth = 2.0;
   ctx.textAlign = "center";
   ctx.strokeText("Puntos: " + Puntuación, 70, 40);
   ctx.strokeText("Vidas: " + Vidas, canvas.width - 70, 40);
