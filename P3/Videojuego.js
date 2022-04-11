@@ -122,6 +122,7 @@ function update(){
                   vely = -vely;
                   Puntuación += 1;
                 }
+
               }
           }
         }
