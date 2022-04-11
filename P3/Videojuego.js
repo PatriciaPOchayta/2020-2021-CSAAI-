@@ -162,9 +162,9 @@ function update(){
   //-- DIBUJAR
   if ( estado == ESTADO.INICIO){
     ctx.beginPath();
-    ctx.font = "35px Helvetica";
+    ctx.font = "30px Helvetica";
     ctx.strokeStyle = 'black';
-    ctx.lineWidth = 2.5;
+    ctx.lineWidth = 2.2;
     ctx.textAlign = "center";
     ctx.strokeText("PULSA 'ESPACIO' PARA DISPARAR", canvas.width/2, canvas.height/3);
     ctx.closePath();
@@ -186,6 +186,7 @@ function update(){
   ctx.rect(l, p, 100, 10);
   ctx.fillStyle = 'white';
   ctx.fill()
+  ctx.strokeStyle = 'black';
   ctx.stroke()
   ctx.closePath();
   
