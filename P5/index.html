@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Filtro 1</title>
+    <link rel="stylesheet" href="filtro.css">
+    <script src="filtro.js"></script>
+  </head>
+  <body onload="main();">
+
+    <img src="texto.png" id="title">
+
+    <div id = "arriba">
+        <div id = "izq">
+            <p>Imagen original</p>
+            <img src="Taylor1.webp" id="imagesrc">
+        </div>
+        <div id = "drch">
+            <p>Imagen manipulada</p>
+            <canvas id="display"></canvas>
+        </div>
+    </div>
+
+    <br>
+
+    <div id = "botones">
+        <button class = "button" type="button" id="colores">COLORES</button>
+        <button class = "button" type="button" id="grises">ESCALA DE GRISES</button>
+        <button class = "button" type="button" id = "negativo">NEGATIVO</button>
+    </div>
+
+
+    <div id = "controladores">
+      <div id = "deslizador1">
+          <p>Controlador R</p>
+          <input type="range" id="deslizadorR" min="0" max="255" value="255"/>
+          <p id="range_valueR">255</p>
+      </div>
+
+      <div id = "deslizador2">
+          <p>Controlador G</p>
+          <input type="range" id="deslizadorG" min="0" max="255" value="255"/>
+          <p id="range_valueG">255</p>
+      </div>
+
+      <div id = "deslizador3">
+          <p>Controlador B</p>
+          <input type="range" id="deslizadorB" min="0" max="255" value="255"/>
+          <p id="range_valueB">255</p>
+      </div>
+    </div>
+
+
+  </body>
+</html>
