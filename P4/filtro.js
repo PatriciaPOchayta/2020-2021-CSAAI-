@@ -163,6 +163,18 @@ function main() {
       //-- Poner la imagen modificada en el canvas
       ctx.putImageData(imgData, 0, 0);
     }
+
+    negativo.onclick = () =>{
+      //Va cambiando el valor de negativo segun se quiere aplicar o no
+      if (negativo_boolean){
+        negativo_boolean = false;
+      }else{
+        negativo_boolean = true;
+      }
+  
+      im_negativo()
+      ctx.putImageData(imgData, 0, 0);
+    }
   
     colores.onclick = () =>{
       //--Cambia el valor de color a true
@@ -188,16 +200,6 @@ function main() {
       //no hay que volver a pasar negativo_im porque grises_im coge los valores de los pixels
     }
   
-    negativo.onclick = () =>{
-      //Va cambiando el valor de negativo segun se quiere aplicar o no
-      if (negativo_boolean){
-        negativo_boolean = false;
-      }else{
-        negativo_boolean = true;
-      }
-  
-      im_negativo()
-      ctx.putImageData(imgData, 0, 0);
-    }
+
   
   }
