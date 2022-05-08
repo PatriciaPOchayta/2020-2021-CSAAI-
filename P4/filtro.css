@@ -3,7 +3,7 @@ body {
   }
   
   p{
-    color: darkmagenta;
+    color: rgb(196, 43, 196);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-size: 18px;
@@ -13,10 +13,10 @@ body {
   button{
     background-color: #F5AAFF;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 8px;
-    color: rgba(109, 47,180, 1);
+    border-radius: 4px;
+    color: white;
     text-align: center;
-    padding: 3px 3px;
+    padding: 6px 6px;
     font-size: 18px;
     margin: 5px 5px;
     cursor: pointer;
@@ -41,16 +41,16 @@ body {
   
   /*Imagen original*/
   #imagesrc{
-    border: #F5AAFF 15px solid;
+    border: #F5AAFF 5px solid;
     border-style: outset;
-    border-radius: 15px;
+    border-radius: 5px;
   }
   
   /*Canvas con la imagen filtrada*/
   #display{
-    border: #F5AAFF 15px solid;
+    border: #F5AAFF 5px solid;
     border-style: outset;
-    border-radius: 15px;
+    border-radius: 5px;
   }
   
   /*imagen titulo*/
@@ -86,7 +86,7 @@ body {
     margin: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 600px;
+    width: 500px;
     height: 130px;
   }
   
